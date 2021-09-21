@@ -1,1 +1,22 @@
+Practica 1 principios solid
 
+Realice en el lenguaje de su preferencia, un codigo que represente el siguiente enunciado, usando los principios vistos en las presentaciones de SOLID:
+
+ 
+
+Se quiere crear una plataforma que permita a personas en todo el mundo, jugar videojuegos de forma individual, competitiva o cooperativa en linea.
+Cada jugador tendra un perfil con su email, nombre, nickname o alias, ciudad y pais.
+Los videojuegos tienen un id, un nombre, una descripción y una modalidad (individual, competitiva o cooperativa).
+Cada jugador ademas, puede jugar varios juegos al mismo tiempo.
+
+
+Práctica 1 practica arquitectura limpia
+
+Con el enunciado anterior, y usando los conceptos de Arquitectura Limpia, desarrolle alguno de los siguientes casos de uso (al menos 1) usando un API para el Caso de Uso:
+
+ 
+
+Permitir a un Jugador, crear sus datos basicos y asignarle ademas minimo dos videojuegos, cuya informacion se envia hacia el Endpoint junto con los datos basicos.
+Permitir crear un videojuego con todos sus atributos y luego responder listando todos los videojuegos creados.
+Permitir crear videojuegos por modalidad, creando al menos 3 por cada tipo de modalidad definida, agregar ademas una busqueda por modalidad.
+No es necesario implementar persistencia, puede trabajar con Objetos solamente.
