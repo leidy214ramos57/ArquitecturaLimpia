@@ -5,9 +5,10 @@ import reactor.core.publisher.Mono;
 
 public interface VideoJuegosService {
 
-    Mono<VideoJuegos> getPerson(String id);
+    Mono<VideoJuegos> getVideojuego(String id);
     Mono<String> getNombre(String id);
     Mono<String> getDescripcion(String id);
+    Mono<String> getModalidad(String id);
 
 
 }

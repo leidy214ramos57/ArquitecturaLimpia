@@ -9,8 +9,8 @@ import reactor.core.publisher.Mono;
 public class ApiService implements VideoJuegosService {
 
     @Override
-    public Mono<VideoJuegos> getPerson(String id) {
-        return Mono.just(VideoJuegos.builder().id(id).nombre("Mario Bros").descripcion("Juego de destreza").build());
+    public Mono<VideoJuegos> getVideojuego(String id) {
+        return Mono.just(VideoJuegos.builder().id(id).nombre("Mario Bros").descripcion("Juego de destreza").modalidad("Individual").build());
     }
 
     @Override
@@ -21,5 +21,10 @@ public class ApiService implements VideoJuegosService {
     @Override
     public Mono<String> getDescripcion(String id) {
         return Mono.just("Juego de destreza");
+    }
+
+    @Override
+    public Mono<String> getModalidad(String id) {
+        return Mono.just("Individual");
     }
 }

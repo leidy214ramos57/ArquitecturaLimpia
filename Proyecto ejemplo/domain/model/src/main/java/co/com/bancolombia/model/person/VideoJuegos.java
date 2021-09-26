@@ -13,6 +13,15 @@ public class VideoJuegos {
     private String id;
     private String nombre;
     private String descripcion;
+    private String modalidad;
+
+    public String getModalidad() {
+        return modalidad;
+    }
+
+    public void setModalidad(String modalidad) {
+        this.modalidad = modalidad;
+    }
 
     public String getId() {
         return id;
@@ -44,6 +53,7 @@ public class VideoJuegos {
                 "id='" + id + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", descripcion='" + descripcion + '\'' +
+                ", modalidad='" + modalidad + '\'' +
                 '}';
     }
 }

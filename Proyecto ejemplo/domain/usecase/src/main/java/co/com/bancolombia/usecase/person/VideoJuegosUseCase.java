@@ -10,16 +10,20 @@ public class VideoJuegosUseCase {
 
     private final VideoJuegosService serviceGateway;
 
-    public Mono<VideoJuegos> getVideoJuegos(String id){
-        return serviceGateway.getPerson(id);
+    public Mono<VideoJuegos> getVideoJuegos(String id) {
+        return serviceGateway.getVideojuego(id);
     }
 
-    public Mono<String> getNombre(String id){
+    public Mono<String> getNombre(String id) {
         return serviceGateway.getNombre(id);
     }
 
-    public Mono<String> getDescripcion(String id){
+    public Mono<String> getDescripcion(String id) {
         return serviceGateway.getDescripcion(id);
+    }
+
+    public Mono<String> getModalidad(String id) {
+        return serviceGateway.getModalidad(id);
     }
 
 }
