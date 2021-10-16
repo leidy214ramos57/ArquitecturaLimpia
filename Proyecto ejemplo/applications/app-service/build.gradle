@@ -1,10 +1,9 @@
 apply plugin: 'org.springframework.boot'
 
 dependencies {
-	implementation project(':bancolombia-service')
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-undertow', version: '2.4.2'
 	implementation project(':api-rest')
-	implementation project(':reactive-web')
+	implementation project(':service-videojuegos')
     implementation project(':model')
     implementation project(':usecase')
     implementation 'org.springframework.boot:spring-boot-starter'
